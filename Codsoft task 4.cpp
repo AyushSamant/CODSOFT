@@ -50,7 +50,7 @@ int main(){
 }
 void additem(string* work,string list[100],int& size){
 	if(size<100){
-		list[size]=*work;
+		list[size]=*new string(*work);
 		size++;
 		cout<<"Item added successfully."<<endl;
 	}else{
